@@ -74,3 +74,24 @@ router.post("/", (req, res) => {
 		res.sendStatus(404);
 	}
 });
+
+router.put("/:Id", (req, res) => {
+	let studentId = req.params.Id;
+	let student = req.body;
+	let currentStudent = students.filter((x) => x.StudentId == studentId)[0];
+	if (currentStudent) {
+		let isValid = ValidateStudent(student);
+		if (isValid == "") {
+			currentStudent.FirstName = student.FirstName;
+			currentStudent.LastName = student.LastName;
+			currentStudent.Gender = student.Gender;
+			res.status(200).send(students);
+		} else {
+			res.statusMessage = isValid;
+			res.sendStatus(404);
+		}
+	} else {
+		res.statusMessage = "Student does not exist";
+		res.sendStatus(404);
+	}
+});
