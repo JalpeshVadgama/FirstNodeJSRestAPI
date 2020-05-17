@@ -95,3 +95,19 @@ router.put("/:Id", (req, res) => {
 		res.sendStatus(404);
 	}
 });
+
+//Delete API
+
+router.delete("/:Id", (req, res) => {
+	let studentId = req.params.Id;
+	let currentStudent = students.filter((x) => x.StudentId == studentId)[0];
+	if (currentStudent) {
+		students = students.filter((x) => x.StudentId !== studentId);
+		console.log(students);
+		res.statusMessage = "Student deleted sucessfully.";
+		res.sendStatus(200);
+	} else {
+		res.statusMessage = "Student does not exist";
+		res.sendStatus(404);
+	}
+});
