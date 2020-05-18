@@ -1,4 +1,4 @@
-#Build your first RESTful API with Node.js and Express. CRUD Operation with API in Node.js and Express
+##Build your first RESTful API with Node.js and Express. CRUD Operation with API in Node.js and Express
 
 
 I have created a video series where I have explained how we can create RESTFUL API with node.js and Express. It is a four-part video series and each part explains one operation in the details. 
@@ -9,14 +9,15 @@ In this video, I have explained how we are creating A get APIs to get all the da
 
 Following is the first video of the comeplete video series:
 
-{% youtube 9gcCKpH1vLg%}
+https://bit.ly/nodejsrestapipart1
 
 ##Part 2: Build your first RESTful API with Node.js and Express Create Student(Post):
 
 In this part, I have explained how we can use Body parser a middleware to get data from the request body. Basically body parse is a middleware that extracts body from request and provides us in east format. Then I have explained how we can get data via POST API and get data from the request body. After that, I have created the 'ValidateStudent' function to demonstrate how we can validate the data coming from our body. 
 
 Following is the second video of complete video series:
-{% youtube ktO-sJGmB9c%}
+
+https://bit.ly/nodejsrestpipart2
 
 ##Part3: Build your first RESTful API with Node.js and Express  Update(Put):
 
@@ -24,14 +25,16 @@ In this video, We have created a put API with the help of express and node.js. H
 otherwise it will return not found. If it is there then it's going to first validate student object and then update it with new data. 
 
 Following is the third video of the complete video series.
-{% youtube 3diZao0OHb4%}
+
+https://bit.ly/nodejsrestapipart3
 
 ##Part 4: Build your first RESTful API with Node.js and Express Delete
 
 In this video, We have created a Delete API with the help of express and node.js. Here we are passing id for a student whom we need to delete. Then we are checking if a student with that student id exist then we are deleting that students from the array which act as our database. And the end we are sending the message that the student deleted successfully.
 
 Following is the fourth video of the complete video series.
-{% youtube IMNXsK3Iy7U%}
+
+https://bit.ly/nodejsrestapipart4
 
 
 All the Source Code for this video series is available on - https://github.com/JalpeshVadgama/FirstNodeJSRestAPI
